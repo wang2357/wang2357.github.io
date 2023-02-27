@@ -1,0 +1,322 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background: #fff;
+  margin: 30pt;
+  margin-bottom: 60pt;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #03f;
+}
+
+a:hover {
+	color: #09e;
+}
+
+.note{
+  color: red;
+}
+
+strong, b {
+  font-weight: 700;
+  color: #222;
+}
+
+/* Major block elements */
+#header {
+  min-width:700px;
+  /* max-width: 800px; */
+}
+
+#left-sidebar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  width: 130px;
+  min-height:500px;
+  padding: 20px 20px 0 0;
+  border-right: 1px solid #ccc;
+  text-align: right;
+  font-size: 15px;
+}
+
+#main {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 180px;
+  margin-right: 20px;
+  /* max-width: 615px; */
+}
+
+/* header elements */
+
+#header h1
+{
+	font-size: 30px;
+  font-weight: 400;
+	color: #222;
+  text-align: left;
+}
+
+/* left bar elements */
+
+#left-sidebar .menu-category
+{
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #222;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#left-sidebar a {
+	color: #03f;
+}
+
+#left-sidebar a:hover {
+	color: black;
+  /* font-weight: bold; */
+}
+
+#left-sidebar a.current:link, #left-sidebar a.current:visited {
+  color: #555;
+  border-bottom: 0px gray solid;
+}
+
+/* main elements */
+
+#main h1 {
+	padding-top: .5ex;
+	font-size: 20px;
+  font-weight: 700;
+	color: #444;
+}
+
+#main h2 {
+	font-size: 16px;
+  font-weight: 700;
+	color: #333;
+  margin-top: 1em;
+}
+
+#main h3 {
+	font-size: 16px;
+  font-weight: 700;
+	color: #333;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+#main p {
+	margin: 1em 1em;
+	/*line-height: 20px;*/
+}
+
+#main ul {
+	margin-left: 40px;
+}
+
+#main ol {
+	margin-left: 45px;
+}
+
+#main li p {
+	margin-top: 1ex;
+	margin-left: 0;
+}
+
+#main ul li {
+	list-style-type: square;
+  margin-bottom : 8px;
+}
+
+#main ul ul li {
+	list-style-type: circle;
+}
+
+#main pre, #main tt {
+	padding-left: .3ex;
+	padding-right: .3ex;
+  color: darkgreen;
+	font-family: "DejaVu Sans Mono", monospace, "Courier New";
+}
+
+/* footer */
+
+div#footer {
+  border-top: 1.4px solid #666688;
+  padding-top: 1px;
+  margin-top: 60px;
+  min-width: 700px;
+  /* max-width: 800px; */
+  width: auto !important;
+  width: 900px;
+  clear: both;
+}
+
+div#footer-text {
+  float: right;
+  color: #222;
+  font-size: small;
+}
+
+/* tables */
+
+table.nice {
+  min-width: 600px;
+  border-width: 2px 0px 2px 0px;
+  border-spacing: 0px;
+  border-style: solid solid solid solid;
+  border-color: black black black black;
+  border-collapse: collapse;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.nice td {
+  border-width: 1px 0px 1px 0px;
+  padding: 2px 4px 2px 4px;
+  border-style: inset inset inset inset;
+  border-color: gray gray gray gray;
+  vertical-align:middle;
+  -moz-border-radius: 0px 0px 0px 0px;
+}
+
+table.nice tr.past {
+  background-color: #ccc;
+}
+
+/* external links */
+
+a[href^="https://"]:not([href*="renyi.ece.iastate.edu"]):after,
+a[href^="http://"]:not([href*="jemdoc"]):after {
+   content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
+}
+
+div.blocktitle {
+	font-weight: bold;
+	/*color: #cd7b62; */
+	color: black;
+	margin-top: 1.2em;
+	margin-bottom: 0.1em;
+}
+
+div.blockcontent {
+	border: 1px solid silver;
+	padding: 0.3em 0.5em;
+}
+
+div.infoblock > div.blockcontent {
+	background: #cecece;
+}
+
+div.blockcontent p + ul, div.blockcontent p + ol {
+	margin-top: 0.4em;
+}
+
+div.infoblock p {
+	margin-bottom: 0em;
+}
+
+div.infoblock li p, div.infoblock dd p {
+	margin-bottom: 0.5em;
+}
+
+div.infoblock p + p {
+	margin-top: 0.8em;
+}
+
+div.codeblock > div.blockcontent {
+	background: #f6f6f6;
+}
+
+span.pycommand {
+	color: #000070;
+}
+
+span.title {
+	color: black;
+}
+
+span.biblinks {
+	float:right;
+  margin-right: 4em;
+	font-size: 0.8em;
+}
+
+span.award {
+	font-size: 0.8em;
+}
+span.author, span.venue {
+	color: #666;
+	font-size: .9em;
+}
+
+span.statement {
+	color: #008800;
+}
+span.builtin {
+	color: #000088;
+}
+span.operator {
+	color: #880000;
+}
+span.error {
+	color: #aa0000;
+}
+span.comment, span.comment > *, span.string, span.string > * {
+	color: #606060;
+}
+
+@media print {
+	#layout-menu { display: none; }
+}
+
+#fwtitle {
+	margin: 2px;
+}
+
+#fwtitle #toptitle {
+	padding-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
+	margin-top: -0.7em;
+}
+
+div#toptitle h1, #layout-content div#toptitle h1 {
+	margin-bottom: 0.0em;
+	padding-bottom: 0.1em;
+	padding-top: 0;
+	margin-top: 0.5em;
+	border-bottom: none;
+}
+
+img.eq {
+	padding: 0;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+	margin: 0;
+}
+
+img.eqwl {
+	padding-left: 2em;
+	padding-top: 0.6em;
+	padding-bottom: 0.2em;
+	margin: 0;
+}
